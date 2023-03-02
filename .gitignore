@@ -1,0 +1,3 @@
+/node_modules
+/api-express-mongo/node_modules
+.env

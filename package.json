@@ -1,0 +1,32 @@
+{
+  "name": "monorepo-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": [
+    "api-express-mongo",
+    "api-mongo-sockets"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:express": "npm run dev --workspaces=api-express-mongo",
+    "dev:socket": "npm run dev --workspaces=api-mongo-sockets",
+    "start:express": "npm run start --workspaces=api-express-mongo",
+    "start:socket": "npm run start --workspaces=api-mongo-sockets"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.4",
+    "jsonwebtoken": "^9.0.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  }
+}
