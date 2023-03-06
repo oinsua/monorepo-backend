@@ -8,7 +8,7 @@ import routes from './src/route/index.js';
 
 const app = express();
 
-//setting
+//settings
 app.set('PORT', process.env.PORT || PORT);
 app.set('AppName', 'Aplication Express-Mongo-Socket');
 
@@ -16,13 +16,13 @@ app.set('AppName', 'Aplication Express-Mongo-Socket');
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-//middleware
+//middlewares
 app.use(express.json())
 app.use(express.text())
 app.use(morgan('dev'))
 app.use(cors({ origin: '*' }))
 
-//route
+//routes
 app.get('/', (req, res) => {
     console.log(`Welcome to ${app.get('AppName')}`)
     res.status(200).send(`Welcome to ${app.get('AppName')}....`);

@@ -12,7 +12,8 @@
     "dev:express": "npm run dev --workspaces=api-express-mongo",
     "dev:socket": "npm run dev --workspaces=api-mongo-sockets",
     "start:express": "npm run start --workspaces=api-express-mongo",
-    "start:socket": "npm run start --workspaces=api-mongo-sockets"
+    "start:socket": "npm run start --workspaces=api-mongo-sockets",
+    "commit": "sui-mono commit"
   },
   "keywords": [],
   "author": "",
@@ -22,10 +23,11 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mongoose": "^6.8.4",
-    "jsonwebtoken": "^9.0.0"
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.4"
   },
   "devDependencies": {
+    "@s-ui/mono": "^2.34.0",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.20"
   }
