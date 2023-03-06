@@ -13,7 +13,9 @@
     "dev:socket": "npm run dev --workspaces=api-mongo-sockets",
     "start:express": "npm run start --workspaces=api-express-mongo",
     "start:socket": "npm run start --workspaces=api-mongo-sockets",
-    "commit": "sui-mono commit"
+    "commit": "sui-mono commit",
+    "check": "./node_modules/.bin/sui-mono check",
+    "release": "./node_modules/.bin/sui-mono release"
   },
   "keywords": [],
   "author": "",

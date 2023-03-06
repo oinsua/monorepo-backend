@@ -1,7 +1,7 @@
 const { Schema, model } = require('mongoose');
 const { JWT_REFRESK_EXPIRATION } = require("../config.js");
 const { v4: uuidv4 } = require('uuid')
-
+//create schema
 const RefreshTokenSchema = new Schema({
     token: String,
     user: {
