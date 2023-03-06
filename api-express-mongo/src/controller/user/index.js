@@ -13,9 +13,9 @@ const createUser = async (req, res, next) => {
             password: await userModel.encrytPassword(password),
         });
 
-        newUser = await getRoles({ roles: rol, newUser });
+        newUser = await getRoles({ roles: rol, newUser }); //create new user
 
-        const userInsert = await newUser.save();
+        const userInsert = await newUser.save(); //save
 
         const token = jwt.sign({ id: userInsert._id }, SECRET, { expiresIn: 86400 });
 

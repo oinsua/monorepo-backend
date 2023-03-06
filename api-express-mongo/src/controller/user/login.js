@@ -20,7 +20,7 @@ const loginUser = async (req, res, next) => {
 
             const token = jwt.sign({ id: existUser[0]._id }, SECRET, { expiresIn: JWT_EXPIRATION });
 
-            const refreshToken = await RefreshToken.createToken(existUser[0]);
+            const refreshToken = await RefreshToken.createToken(existUser[0]); //create refresh token
 
             let authorities = [];
 

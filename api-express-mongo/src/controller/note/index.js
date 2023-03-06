@@ -11,7 +11,7 @@ const createNote = async (req, res, next) => {
             important: important ? important : false
         });
 
-        await newNote.save();
+        await newNote.save();//save
 
         return res.status(200).json({ message: "OK" });
     } catch (error) {
