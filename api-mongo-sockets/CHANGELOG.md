@@ -1,5 +1,14 @@
 # CHANGELOG
 
+# 1.3.0 (2023-03-06)
+
+
+### Features
+
+* **api-mongo-sockets:** Add engine rules ([2192a65](https://github.com/oinsua/monorepo-backend/commit/2192a651982c1cbe1dd77b9f9c5b8e66975560f0))
+
+
+
 # 1.2.0 (2023-03-06)
 
 
