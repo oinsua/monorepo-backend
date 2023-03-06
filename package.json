@@ -9,6 +9,9 @@
     "api-mongo-sockets"
   ],
   "config": {
+    "sui-mono": {
+      "access": "public"
+    },
     "validate-commit-msg": {
       "types": "@s-ui/mono/src/types"
     }

@@ -4,7 +4,7 @@ import 'colors';
 export const start = () => {
 
     const engine = new Engine();
-
+    //Add engine rules
     engine.addOperator('startsWith', (factValue, jsonValue) => {
         if (!factValue.length) return false;
         return factValue[0].toLowerCase() === jsonValue.toLowerCase();
